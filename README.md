@@ -1,3 +1,40 @@
+Agentic_AI_Exploration/
+│
+├── app/
+│   ├── agents/
+│   │   ├── ingestion_agent.py
+│   │   ├── retrieval_agent.py
+│   │   ├── sql_agent.py
+│   │   ├── quality_agent.py
+│   │   └── governance_agent.py
+│   │
+│   ├── rag/
+│   │   ├── embeddings.py
+│   │   ├── vector_store.py
+│   │   └── retriever.py
+│   │
+│   ├── workflows/
+│   │   └── temporal_workflow.py
+│   │
+│   ├── api/
+│   │   └── main.py
+│   │
+│   ├── ui/
+│   │   └── streamlit_app.py
+│   │
+│   └── utils/
+│       └── helper.py
+│
+├── data/
+├── notebooks/
+├── tests/
+├── screenshots/
+├── requirements.txt
+├── README.md
+├── Dockerfile
+├── .gitignore
+└── docker-compose.yml
+
 # AgentFlow AI
 Enterprise-grade Multi-Agent AI Platform combining:
 
