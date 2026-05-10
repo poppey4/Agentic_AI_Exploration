@@ -1,0 +1,15 @@
+langchain
+openai
+chromadb
+sentence-transformers
+pypdf
+streamlit
+fastapi
+uvicorn
+pyspark
+pandas
+numpy
+python-dotenv
+tiktoken
+faiss-cpu
+temporalio
