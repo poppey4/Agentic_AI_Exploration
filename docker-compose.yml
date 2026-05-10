@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+
+  streamlit:
+    build: .
+    container_name: agentflow_streamlit
+    ports:
+      - "8501:8501"
+    command: streamlit run app/ui/streamlit_app.py
+    volumes:
+      - .:/app
+    depends_on:
+      - api
+
+  api:
+    build: .
+    container_name: agentflow_api
+    ports:
+      - "8000:8000"
+    command: uvicorn app.api.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - .:/app
+
+  chromadb:
+    image: chromadb/chroma
+    container_name: agentflow_chromadb
+    ports:
+      - "8001:8000"
